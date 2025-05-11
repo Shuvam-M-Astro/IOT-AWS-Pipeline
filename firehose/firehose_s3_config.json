@@ -1,0 +1,11 @@
+{
+  "RoleARN": "arn:aws:iam::<your-account-id>:role/firehose_delivery_role",
+  "BucketARN": "arn:aws:s3:::iot-sensor-data-bucket",
+  "Prefix": "sensor_data/",
+  "ErrorOutputPrefix": "errors/",
+  "BufferingHints": {
+    "SizeInMBs": 5,
+    "IntervalInSeconds": 60
+  },
+  "CompressionFormat": "GZIP"
+}
